@@ -1,11 +1,35 @@
-h1 {
+.jumbotron {
 	text-align: center;
+	color: white;
+	font-size: 50px;
+	text-shadow: 3px 2px black;
+	background-image: url(../images/glitter.jpeg);
+
+}
+
+body {
+	background-image: url(../images/shattered.png);
+}
+
+button,
+input {
+	border-radius: 10px;
+	margin-right: 5px;
+	margin-bottom: 5px;
 }
 
 .gif {
-	margin: 5px;
+	height: 250px;
+	width: 350px;
+	margin: 10px;
 }
 
-button {
-	margin-right: 5px;
+.gif:hover {
+	opacity: .5;
+}
+
+button:hover, 
+#go:hover {
+	background-color: grey;
+
 }

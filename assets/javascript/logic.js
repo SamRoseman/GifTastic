@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 // VARIABLES ====================================================================
 	var newButton;
-	var myBtns = ["Cats" , "Fairies" , "Buffy" , "Wine" , "Glitter" , "Millenials" , "Tattoos" , "Crystals" , "Wicca" , "Nails"];
+	var myBtns = ["Cats" , "Fairy" , "Buffy" , "Wine" , "Glitter" , "Kittens" , "Crystals" , "Wicca" , "Plants" , "Cute Animals" , "Puns"];
 	
 // FUNCTIONS ====================================================================
 	function renderButtons() {
@@ -19,7 +19,7 @@ $(document).ready(function() {
 	$(document).on("click", "button", function(){
 		console.log(this);
 		var search = $(this).attr("value");
-		var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + search + "&api_key=924658a05f41431d80eacb5d77304466&limit=10";
+		var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + search + "&api_key=924658a05f41431d80eacb5d77304466&limit=9";
 
 		$.ajax({
 		      url: queryURL,
